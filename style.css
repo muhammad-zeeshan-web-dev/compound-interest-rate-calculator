@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsla(180, 4%, 74%, 0.774);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    color: hsl(197, 4%, 31%);
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+
+    background-color: rgb(220, 227, 233);
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+
+    box-shadow: 5px 5px 10px hsla(0, 0%, 0%, 0.3);
+}
+
+label {
+    width: 100%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: hsl(197, 4%, 31%);
+}
+
+input {
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+
+    text-align: center;
+
+    border: 2px solid hsl(0, 0%, 75%);
+    border-radius: 5px;
+
+    font-size: 1.3rem;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: hsl(88, 69%, 37%);
+}
+
+button {
+    width: 100%;
+
+    background-color: hsl(90, 100%, 50%);
+    color: white;
+
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    padding: 12px 15px;
+
+    margin-top: 5px;
+
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(91, 19%, 45%);
+}
+
+#total {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    margin-top: 25px;
+
+    color: hsl(197, 4%, 31%);
+}
+
+#total-amount {
+    color: hsl(88, 69%, 37%);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 25px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        max-width: 380px;
+        padding: 25px;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+    }
+
+    #total {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 100%;
+        padding: 22px 18px;
+        border-radius: 12px;
+    }
+
+    label {
+        font-size: 1.15rem;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 11px;
+    }
+
+    #total {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
